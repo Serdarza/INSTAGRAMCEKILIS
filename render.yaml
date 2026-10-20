@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: instagram-cekilis
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: SCRAPE_CREATORS_API_KEY
+        sync: false
